@@ -6,24 +6,52 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title </title>
+        <title> MI MUNDO </title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+                <style>
+                   body
+                   {
+                       font-family: Arial;
+                   }
+                    
+                </style>
     </head>
-	<center>
-		<div style="width: 60%;">
-		<div>PROGRAMACION II - CASE 1</div>
-                <form action="NewServlet" method="post"></<form>
-		<input type="text" class="form-control"/> <br><br>
-		<input type="text" class="form-control"/> <br><br>
-		<input type="text" class="form-control"/> <br><br>
-		<input type="text" class="form-control"/> <br><br>
-		<input type="text" class="form-control"/> <br><br>
-		<input type="button" class="btn btn-primary" value="GUARDAR">
-		<button type="button" class="btn btn-warning">WARNING</button>
-                <input type="submit" class="btn btn-primary" value="Guardar y Enviar">
+    <body>
+    <div style="width: 100%;">
+        <div class="row">
+            <div class="col-12">
+                <center><div><strong>PROGRAMACION II - CASE 1</strong></div></center>
+                <form action="NewServlet" class="justify-content-center" method="post">
+                <div class="form-group row mx-5 justify-content-center">
+                    <label for="name" class=" col-form-label mx-2"> Nombre:   </label>
+                    <input type="text" placeholder="ESCRIBE TU NOMBRE" class="form-control col-4">
+                </div>
+                    
+                <div class="form-group row mx-5 justify-content-center">
+                    <label for="name" class=" col-form-label mx-2"> Apellido:   </label>
+                    <input type="text" placeholder="ESCRIBE TU APELLIDO" class="form-control col-4">
+                </div>
+                    
+                <div class="form-group row mx-5 justify-content-center">
+                    <label for="name" class=" col-form-label mx-2"> Correo:   </label>
+                    <input type="email" placeholder="ESCRIBE TU CORREO" class="form-control col-4">
+                </div>
+                    
+                <div class="form-group row mx-5 justify-content-center">
+                    <label for="name" class=" col-form-label mx-2"> Contraseña:   </label>
+                    <input type="password" placeholder="ESCRIBE TU CONTRASEÑA" class="form-control col-4">
+                </div>             
+                    
+                <center><div class="form-group">
+                    <input type="button" class="btn btn-primary" value="Guardar">
+                    <button type="button" class="btn btn-warning">Ayuda</button>
+                    <input type="submit" class="btn btn-danger" value="Enviar">
+                </div></center>
                 </form>
-		</div>
-	</center>
+            </div>
+        </div>
+    </div>
+    </body>
 </html>
